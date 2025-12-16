@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif
+}
+body{
+    background:#0e0e0e;
+    color:#fff;
+    line-height:1.6
+}
+
+
+.nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(10,10,10,.9);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    z-index:100
+}
+.nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none
+}
+.nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s
+}
+.nav a:hover{
+    color:#ff7a18
+}
+.nav-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700
+}
+.nav-logo-img{
+    width:60px;
+    height:auto
+}
+
+.btn-flotante{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:linear-gradient(45deg,#25d366,#128c7e);
+    padding:14px 22px;
+    border-radius:40px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    z-index:100;
+    animation:pulse 2s infinite
+}
+
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:radial-gradient(circle at top,#1f1f1f,#0b0b0b);
+    padding:40px;
+    padding-top:0px
+}
+.logo{
+    width:250px;
+    margin-bottom:-30px;
+    animation:logoIn 1.2s ease
+}
+h1{
+    font-size:2.8rem;
+    margin-bottom:10px
+}
+.subtitle{
+    opacity:.85;
+    margin-bottom:30px
+}
+.btn{
+    background:linear-gradient(45deg,#ff512f,#dd2476);
+    padding:14px 32px;
+    border-radius:40px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s
+}
+.btn:hover{
+    transform:scale(1.05)
+}
+
+
+section{
+    padding:90px 8%;
+    text-align:center
+}
+.services h2,.ventas h2,.galeria h2,.contacto h2{margin-bottom:25px}
+
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px
+}
+.card{
+    background:#1a1a1a;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+    opacity:0;
+    transform:translateY(40px);
+    transition:.6s
+}
+.card:hover{transform:translateY(-8px)}
+
+
+.galeria{background:#111}
+.grid-galeria a{
+    display:inline-block;
+    margin-top:20px;
+    color:#ff7a18;
+    text-decoration:none;
+    font-weight:600
+}
+
+
+.ventas{
+    background:#0f0f0f;
+    opacity:0;
+    transform:scale(.95);
+    transition:.6s
+}
+.destacado{
+    margin-top:15px;
+    color:#ff7a18;
+    font-weight:600}
+
+
+.contacto{background:#111}
+.contacto a{color:#fff;
+    text-decoration:none;
+    font-size:1.1rem}
+.wsp_logo {
+    width: 20px;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+
+footer{padding:25px;text-align:center;background:#0b0b0b;opacity:.6}
+
+
+@keyframes logoIn{
+    from{transform:scale(.5) rotate(-180deg);
+        opacity:0}to{transform:scale(1) rotate(0);
+            opacity:1}
+        }
+@keyframes pulse{
+    0%{transform:scale(1)}50%{transform:scale(1.08)}100%{transform:scale(1)}}
+
